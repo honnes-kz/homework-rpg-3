@@ -28,6 +28,7 @@ public class BasicEnemy implements Enemy {
         if (health < 0) {
             health = 0;
         }
+        health = Math.max(0, health - Math.max(0, amount));
     }
 
     @Override
