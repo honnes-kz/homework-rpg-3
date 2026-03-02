@@ -25,10 +25,6 @@ public class Warrior implements Hero {
     @Override
     public void receiveDamage(int amount) {
         // TODO: enforce min 0
-        health -= amount;
-        if (health < 0) {
-            health = 0;
-        }
         health = Math.max(0, health - Math.max(0, amount));
     }
 
